@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name = "suite_lettre">
+        <item>MCF</item>
+        <item>OHSUE</item>
+        <item>NLTAVR</item>
+        <item>OXPHMZD</item>
+        <item>YOELKSFDI</item>
+        <item>EXATZHDWN</item>
+        <item>RCYHOFMESPA</item>
+    </string-array>
+    <integer name="scaling">17</integer>
+    <integer-array name = "sizes">
+        <item>2500</item>
+        <item>1666</item>
+        <item>1250</item>
+        <item>1000</item>
+        <item>833</item>
+        <item>714</item>
+        <item>625</item>
+    </integer-array>
+    <integer-array name = "diziemes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+    </integer-array>
+</resources>

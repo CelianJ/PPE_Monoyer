@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925601016425",
+    "project_id": "ppe-monoyer",
+    "storage_bucket": "ppe-monoyer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925601016425:android:2529f986ab6e0dfac5d0f8",
+        "android_client_info": {
+          "package_name": "com.example.ppemonoyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925601016425-1gl8q3r5fuo9jf00p5b95b69ne8pal67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq_FKI0veRLvCAbdQH1qvnVXBgFtEauGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925601016425-1gl8q3r5fuo9jf00p5b95b69ne8pal67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
