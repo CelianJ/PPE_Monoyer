@@ -1,6 +1,7 @@
 package com.example.ppemonoyer.ui;
 
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
@@ -28,25 +29,16 @@ public class ParametersActivity extends AppCompatActivity {
     private Button buttonValidation;
     private ImageView mImageEtatCapteur;
     private TextView NomControlleur;
+    private Button validerButton;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parametre);
 
+        validerButton = findViewById(R.id.activity_parametre_valider_button);
         mImageEtatCapteur = findViewById(R.id.parametre_etat_controlleur);
         NomControlleur = findViewById(R.id.activity_parametre_controlleur_name);
-    }
-
-    private void setupListener(){
-        buttonValidation.setOnClickListener(view -> {
-            Log.d("coucou", "setupListener: ");
-            try {
-                Process ms = Runtime.getRuntime().exec("settings put system pointer_speed 7");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
     }
 
     @Override
@@ -74,6 +66,10 @@ public class ParametersActivity extends AppCompatActivity {
         };
         ScheduledFuture<?> scheduledFuture = stpe.scheduleAtFixedRate(runnable, 0, 2l, TimeUnit.SECONDS);
 
+        validerButton.setOnClickListener(view -> {
+            startMainActivity();
+        });
+
     }
 
     private String getControllerName() {
@@ -87,4 +83,10 @@ public class ParametersActivity extends AppCompatActivity {
         }
         return device;
     }
+
+    private void startMainActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }
