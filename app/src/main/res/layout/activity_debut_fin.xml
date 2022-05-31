@@ -7,26 +7,32 @@
 
     <TextView
         android:id="@+id/text_debut_fin"
-        android:layout_width="414dp"
-        android:layout_height="571dp"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
         android:gravity="center"
         android:text="ce texte n'existe pas"
-        tools:layout_editor_absoluteX="-3dp"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="1dp" />
 
     <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="159dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/start_quit"
-            android:layout_width="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_margin="@dimen/default_large_margin"
+            android:background="@drawable/button_radius_primary_color"
             android:gravity="center"
-            android:text="Button" />
+            android:padding="@dimen/default_margin"
+            android:text="Button"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

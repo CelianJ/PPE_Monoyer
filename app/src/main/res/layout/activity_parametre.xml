@@ -70,35 +70,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:background="#1A76D2"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/activity_parametre_valider_button"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginStart="10sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10sp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_large_margin"
+                android:background="@drawable/button_radius_primary_color"
+                android:padding="@dimen/default_large_margin"
                 android:text="Valider"
-                android:textColor="#1A76D2" />
-
-            <Button
-                android:id="@+id/activity_parametre_retour_button"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginStart="10sp"
-                android:layout_marginEnd="10sp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:text="Retour"
-                android:textColor="#1A76D2" />
+                android:textColor="#fff"
+                android:textSize="@dimen/default_text_size" />
 
         </LinearLayout>
 

@@ -43,7 +43,7 @@
 
     <!-- START TEST ACTIVITY -->
     <string name="toolbar_title_test_activity">Le Test de vision</string>
-    <string name="explications">bla bla</string>
+    <string name="explications">Bienvenue dans le test ! Afinde tester votre vision vous devrez cliquer sur la lettre dans la ligne avec plusieures lettres corespondant a la lettre en vert en bas de l\'écran.</string>
     <string name="button_start_test">Je commence le test</string>
 
     <!-- FIN TEST ACTIVITY -->
